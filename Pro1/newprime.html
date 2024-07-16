@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Video Clone</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+body {
+    background-color: #0f171e; /* Dark background color similar to Prime Video */
+    color: white; /* Set text color to white for better visibility */
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.75); /* Lighter color for navbar links */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white; /* Brighten the color on hover */
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('asur.jpg') no-repeat center center;
+    background-size: cover;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    padding: 0 20px;
+}
+
+.hero-section .container {
+    z-index: 1;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Featured Section */
+.featured-section {
+    background-color: #0f171e; /* Ensure the section background matches the page */
+    padding: 60px 0;
+}
+
+.featured-section h2 {
+    color: white;
+}
+
+.card {
+    background-color: #1c2732; /* Slightly lighter dark color for cards */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 1;
+}
+
+.btn-primary {
+    margin-top: auto;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Footer */
+.footer {
+    background-color: #0f171e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.modal-header {
+    background-color: #1c2732; /* Match the dark theme */
+    color: white;
+}
+
+.modal-content {
+    background-color: #0f171e; /* Match the dark theme */
+    color: white;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Prime Video</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="newprime.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mov.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TV Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4 text-white">Welcome to Prime Video</h1>
+                    <p class="lead text-white">Watch thousands of movies and TV shows anytime, anywhere.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Start Watching</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Featured Content Section -->
+    <section class="featured-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Now Streaming </h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="mir.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">mirzapur season 3</h5>
+                            <p class="card-text flex-grow-1">june 2024</p>
+                            <a href="#" class="btn btn-primary mt-auto" data-toggle="modal" data-target="#subscriptionModal">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="asur.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">asur 2</h5>
+                            <p class="card-text flex-grow-1">may 2022</p>
+                            <a href="#" class="btn btn-primary mt-auto" data-toggle="modal" data-target="#subscriptionModal">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="farzi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">farzi</h5>
+                            <p class="card-text flex-grow-1">may 30</p>
+                            <a href="#" class="btn btn-primary mt-auto" data-toggle="modal" data-target="#subscriptionModal">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Prime Video Clone. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Subscription Modal -->
+    <div class="modal fade" id="subscriptionModal" tabindex="-1" role="dialog" aria-labelledby="subscriptionModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="subscriptionModalLabel">Choose a Subscription Plan</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <h6>Basic Plan</h6>
+                                <p>$5.99/month</p>
+                                <button class="btn btn-primary">Select</button>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <h6>Standard Plan</h6>
+                                <p>$9.99/month</p>
+                                <button class="btn btn-primary">Select</button>
+                            </div>
+                            <div class="col-md-12">
+                                <h6>Premium Plan</h6>
+                                <p>$13.99/month</p>
+                                <button class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+</body>
+</html>
