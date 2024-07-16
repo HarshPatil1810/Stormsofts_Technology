@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electroshop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+/* General Styles */
+.navc{
+    color: darkkhaki;
+}
+body {
+    background-color:darkkhaki;
+    
+    font-family: Arial, sans-serif;
+}
+
+/* New Products and Top Selling Products Sections */
+}
+.new-products .card,
+.top-selling-products .card {
+    transition: transform 0.2s;
+    height: 100%;
+    }
+
+.new-products .card:hover,
+.top-selling-products .card:hover {
+    transform: scale(1.05);
+}
+
+.new-products .card img,
+.top-selling-products .card img {
+    height: 150px; /* Adjust this value as needed */
+    object-fit: cover;
+}
+
+.new-products .card-body,
+.top-selling-products .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-products .card-body .card-text,
+.top-selling-products .card-body .card-text {
+    flex-grow: 1;
+}
+
+.new-products .card,
+.top-selling-products .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-products .card-body .btn,
+.top-selling-products .card-body .btn {
+    align-self: center; /* Centers the button horizontally */
+}
+.btn{
+    margin-bottom: 3px;
+    color:white;
+  background-color: black;
+}
+
+/* Signup Section */
+.signup {
+    background-color: #f8f9fa;
+}
+
+.signup .form-control {
+    margin-bottom: 20px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #343a40;
+    color: white;
+  
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nac">
+        <a class="navbar-brand" href="#">Electroshop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row">
+            <!-- Cards for Collections -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="laptop.jpg" class="card-img-top" alt="Laptops">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop Collection</h5>
+                        <p class="card-text">Explore our wide range of laptops for all needs.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="acc.jpg" class="card-img-top" alt="Accessories">
+                    <div class="card-body">
+                        <h5 class="card-title">Accessories</h5>
+                        <p class="card-text">Find the best accessories for your devices.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="camera.jpg" class="card-img-top" alt="Cameras">
+                    <div class="card-body">
+                        <h5 class="card-title">Cameras Collection</h5>
+                        <p class="card-text">Capture moments with our top-rated cameras.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- New Products Section -->
+    <section class="new-products py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">New Products</h2>
+            <div class="row">
+                <!-- Add your new products here -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="buds.jpg" class="card-img-top" alt="New Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">apple buds pro</h5>
+                            <p class="card-text">startings at 25000 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other products -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="tab.jpg" class="card-img-top" alt="New Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">ipad pro</h5>
+                            <p class="card-text">starting at 60000</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="mac.jpg" class="card-img-top" alt="New Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">macbook air m3</h5>
+                            <p class="card-text">Starting at 110000 </p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Selling Products Section -->
+    <section class="top-selling-products py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Top Selling Products</h2>
+            <div class="row">
+                <!-- Add your top selling products here -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="tcam.jpg" class="card-img-top" alt="Top Selling Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">sony camera </h5>
+                            <p class="card-text">starting at 600000</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other products -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="thead.jpg" class="card-img-top" alt="Top Selling Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Headphones</h5>
+                            <p class="card-text">starting at just 3000.</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="tpad.jpg" class="card-img-top" alt="Top Selling Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">ipad pro</h5>
+                            <p class="card-text">starting at 60000</p>
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                            <a href="#" class="btn btn-primary">add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="signup py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Sign Up for Our Newsletter</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer py-5 bg-dark text-white foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Our Story</a></li>
+                        <li><a href="#" class="text-white">Mission</a></li>
+                        <li><a href="#" class="text-white">Vision</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Categories</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Electronics</a></li>
+                        <li><a href="#" class="text-white">Home Appliances</a></li>
+                        <li><a href="#" class="text-white">Gadgets</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Information</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Shipping</a></li>
+                        <li><a href="#" class="text-white">Returns</a></li>
+                        <li><a href="#" class="text-white">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Customer Service</a></li>
+                        <li><a href="#" class="text-white">Warranty</a></li>
+                        <li><a href="#" class="text-white">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
